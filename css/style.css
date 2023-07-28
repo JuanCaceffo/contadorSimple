@@ -31,12 +31,18 @@ body{
 .card__counter{
     width: 30%;
     height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
     background-color: var(--Very--Pale--Blue);
     border-radius: 10px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 3em; /* Ajusta el tamaño de fuente del texto y los números */
+    font-weight: bolder;
 }
 .card_buttonCont{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 90%;
     height: 10%;
