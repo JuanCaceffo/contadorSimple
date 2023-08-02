@@ -1,9 +1,9 @@
 //DOM elements/nodes
 const stop_start = document.getElementById("start-stop")
 const bottonReset = document.getElementById("reset")
-var countNumber = document.getElementById("counter")
+var hsMinsSec = document.getElementById("counter")
 var INTERVAL_ID = null
-
+var counter = 0
 
 function startStopCount(){
     const INTERVAL = 1000
@@ -15,10 +15,21 @@ function startStopCount(){
     }
 }
 function count(){
-    countNumber.innerText++
+    counter++
+    hsMinsSec.innerText = secsToHsMinSec(counter)
+}
+function secsToHsMinSec(sec){
+    var hs 
+    var mins
+    var secs
+    const RESTO = (sec % 3600)
+    hs = Math.trunc(sec/3600)
+    mins =  Math.trunc(RESTO / 60)
+    secs = RESTO % 60 
+    return (hs+':'+mins+':'+secs)
 }
 function reset(){
-    countNumber.innerText = 0
+    hsMinsSec.innerText = "00:00:00"
 }
 
 
