@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'clockicon';
+    src: url(../fonts/alarm_clock.ttf) format('truetype');
+}
 :root{
     --Pink: hsl(322, 100%, 66%);
     --Light--Pink: hsl(321, 100%, 78%);
@@ -22,6 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 50%;
+    min-width: 395px;
     height: 50%;
     background-color: var(--Very--Dark--Cyan);
     border-radius: 10px;
@@ -34,11 +39,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;   
-    background-color: var(--Very--Pale--Blue);
+    background-color: inherit;
     border-radius: 10px;
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    font-size: 3em; /* Ajusta el tamaño de fuente del texto y los números */
+    font-size: 90px; /* Ajusta el tamaño de fuente del texto y los números */
+    font-family: 'clockicon',sans-serif;
     font-weight: bolder;
+    color: var(--Very--Pale--Blue);
 }
 .card_buttonCont{
     display: flex;
