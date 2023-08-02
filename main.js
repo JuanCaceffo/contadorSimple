@@ -16,17 +16,27 @@ function startStopCount(){
 }
 function count(){
     counter++
-    hsMinsSec.innerText = secsToHsMinSec(counter)
+    hsMinsSec.innerText = secsToTimeFormat(counter)
 }
-function secsToHsMinSec(sec){
+function secsToTimeFormat(sec){
     var hs 
     var mins
     var secs
     const RESTO = (sec % 3600)
+
     hs = Math.trunc(sec/3600)
     mins =  Math.trunc(RESTO / 60)
-    secs = RESTO % 60 
-    return (hs+':'+mins+':'+secs)
+    secs = RESTO % 60
+
+    return (leadingCeros(1,hs,0)+':'+leadingCeros(1,mins,0)+':'+leadingCeros(1,secs,0))
+}
+function leadingCeros(maxDigits,number,cantCeros){
+    strNum = String(number)
+    if (strNum.length <= maxDigits ){
+        return cantCeros+strNum
+    }else{
+        return strNum
+    }
 }
 function reset(){
     hsMinsSec.innerText = "00:00:00"
