@@ -26,7 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 50%;
-    min-width: 395px;
+    min-width: 500px;
     height: 50%;
     background-color: var(--Very--Dark--Cyan);
     border-radius: 10px;
@@ -42,9 +42,9 @@ body{
     background-color: inherit;
     border-radius: 10px;
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    font-size: 90px; /* Ajusta el tamaño de fuente del texto y los números */
+    font-size: 100px; /* Ajusta el tamaño de fuente del texto y los números */
     font-family: 'clockicon',sans-serif;
-    font-weight: bolder;
+    font-weight: 400;
     color: var(--Very--Pale--Blue);
 }
 .card_buttonCont{
