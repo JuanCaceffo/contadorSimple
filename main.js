@@ -10,9 +10,13 @@ function startStopCount(){
     if (!INTERVAL_ID){
         INTERVAL_ID = setInterval(count,INTERVAL)
     }else{
-        clearInterval(INTERVAL_ID)
-        INTERVAL_ID = null
+        stopCount()
     }
+}
+function stopCount(){
+    clearInterval(INTERVAL_ID)
+    INTERVAL_ID = null
+
 }
 function count(){
     counter++
