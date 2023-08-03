@@ -43,6 +43,7 @@ function leadingCeros(maxDigits,number,cantCeros){
     }
 }
 function reset(){
+    stopCount()
     counter = 0
     hsMinsSec.innerText = "00:00:00"
 }
