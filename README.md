@@ -5,4 +5,4 @@ echo con html, css y java script vanilla
 
 ### Enlace a la pagina
 
-[contador](https://juancaceffo.github.io/contadorSimple/)
+[contador](https://juancaceffo.github.io/cronometroSimple/)
